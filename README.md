@@ -9,8 +9,6 @@ A lightweight Flask API that classifies and validates estate‐related documents
 - **Master Router**: Receives an uploaded document, delegates to Classification → Compliance agents.  
 - **Classification Agent**: Maps text to one of six estate categories.  
 - **Compliance Agent**: Enforces category-specific validation rules.  
-- **Client Script**: Reads sample `.txt` files and POSTs them to the API.  
-
 
 ---
 
@@ -61,7 +59,7 @@ export FLASK_APP=app.py
 python -m flask run
 ```
 
-The API listens on http://127.0.0.1:5000
+The API listens on ```http://127.0.0.1:5000```
 
 
 ## Copy curl examples in Alix/documents to validate documents or use Postman
