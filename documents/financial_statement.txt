@@ -1,0 +1,55 @@
+FINANCIAL STATEMENT
+Prepared for Johnathan Edward Doe
+Date: March 15, 2023
+
+Personal Information:
+Name: Johnathan Edward Doe
+Address: 789 Elm Street, Albany, NY 12207
+Phone: (555) 123-4567
+Email: johnathan.doe@example.com
+
+Assets:
+- Cash and Cash Equivalents: $50,000
+- Checking Account Balance: $15,000
+- Savings Account Balance: $35,000
+- Investments:
+  - Stocks: $120,000
+  - Bonds: $80,000
+- Retirement Accounts:
+  - 401(k): $200,000
+  - IRA: $75,000
+- Real Estate:
+  - Primary Residence: $350,000
+  - Rental Property: $250,000
+- Personal Property:
+  - Vehicles: $30,000
+  - Jewelry and Art: $20,000
+
+Liabilities:
+- Mortgage on Primary Residence: $200,000
+- Mortgage on Rental Property: $150,000
+- Credit Card Debt: $10,000
+- Personal Loans: $5,000
+- Auto Loans: $12,000
+
+Net Worth Calculation:
+Total Assets: $870,000
+Total Liabilities: $377,000
+Net Worth: $493,000
+
+Income Statement:
+Annual Salary: $120,000
+Rental Income: $24,000
+Investment Income: $10,000
+Other Income: $5,000
+
+Expenses:
+Mortgage Payments: $24,000
+Property Taxes: $6,000
+Utilities: $4,800
+Insurance: $3,600
+Living Expenses: $30,000
+Loan Payments: $6,000
+
+Summary:
+Johnathan Edward Doe has a strong financial position with a net worth of $493,000 and stable income streams. Liabilities are manageable relative to assets.
