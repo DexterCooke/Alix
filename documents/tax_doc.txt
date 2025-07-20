@@ -1,0 +1,63 @@
+FORM 1040
+U.S. Individual Income Tax Return
+For the year Jan. 1–Dec. 31, 2023, or other tax year beginning __/__/2023 ending __/__/____
+
+OMB No. 1545-0074
+
+Filing Status
+☐ Single ☒ Married filing jointly ☐ Married filing separately ☐ Head of household ☐ Qualifying widow(er)
+
+1 Wages, salaries, tips, etc. .............................. $120,000
+2 Tax-exempt interest .................................... $    500
+3 Ordinary dividends .................................... $  1,200
+4 IRA distributions ...................................... $     0
+5 Pensions and annuities ................................ $  5,000
+6 Social security benefits .............................. $  8,000
+7 Total income (1 + 2 + 3 + 4 + 5 + 6)................... $134,700
+
+8 Adjustments to income .................................. $  2,000
+9 Adjusted gross income (7 − 8)......................... $132,700
+
+STANDARD DEDUCTION:
+• Married filing jointly: $27,700
+
+10 Standard deduction .................................... $ 27,700
+11 Taxable income (9 − 10)............................... $105,000
+
+Tax Computation
+12 Tax (from Tax Table or Schedule 2)..................... $ 15,120
+13 Nonrefundable credits ................................ $   500
+14 Subtract line 13 from line 12.......................... $14,620
+
+Other Taxes
+15 Self-employment tax ................................... $  1,234
+16 Total tax (14 + 15).................................... $15,854
+
+Payments
+17 Federal income tax withheld (from Forms W-2 and 1099) $12,000
+18 Estimated tax payments and amount applied from 2022 .. $ 3,000
+19 Earned income credit (EIC)............................. $   200
+20 Total payments (17 + 18 + 19)......................... $15,200
+
+Refund or Amount You Owe
+21 Overpaid (line 20 − line 16).......................... $  (654)
+22 Amount you owe (if line 16 − line 20)................ $     0
+
+Sign Here
+Under penalties of perjury, I declare that I have examined this return and accompanying schedules  
+and statements, and to the best of my knowledge and belief, they are true, correct, and complete.
+
+Your signature: ____________________  Date: 04/15/2024  
+Spouse’s signature: ________________  Date: 04/15/2024  
+
+Paid Preparer Use Only
+Preparer’s name: Jane A. Accountant  PTIN: P12345678  
+Firm’s name: ABC Tax Services  Phone: (555) 123-4567  
+Firm’s EIN: 12-3456789  
+Address: 100 Main St., Albany, NY 12207
+
+Attachments:
+• Form W-2: Wages, tips, other compensation  
+• Schedule 1: Additional Income and Adjustments  
+• Schedule 2: Additional Taxes  
+• Schedule 3: Credits and Payments

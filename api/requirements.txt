@@ -1,0 +1,5 @@
+flask>=2.0.0
+requests>=2.25.0
+llama-index>=0.5.10
+llama-index-llms-ollama>=0.1.0
+pyyaml>=6.0.0

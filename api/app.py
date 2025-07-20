@@ -2,8 +2,16 @@ from flask import Flask, request, jsonify
 from llama_index.llms.ollama import Ollama
 from llama_index.core.llms import ChatMessage
 import json
+import yaml
+import os
 
 app = Flask(__name__)
+
+BASE_DIR   = os.path.dirname(os.path.abspath(__file__))
+RULES_PATH = os.path.join(BASE_DIR, "rules.yaml")
+
+with open(RULES_PATH, "r", encoding="utf-8") as f:
+    RULES = yaml.safe_load(f)
 
 llm = Ollama(model="llama3.2")
 
@@ -29,7 +37,8 @@ def classify_document(document_id, document_text):
         role="system",
         content=(
             "You are an intelligent agent that classifies estate documents "
-            "into exactly one of these categories (case sensitive): "
+            "if Death Certificate, Will or Trust, Property Deed, Financial Statement, Tax Document is found "
+            "categories (case sensitive) into the following categories: "
             "Death Certificate, Will or Trust, Property Deed, Financial Statement, Tax Document, Miscellaneous."
         )
     )
@@ -39,6 +48,10 @@ def classify_document(document_id, document_text):
     )
     messages = [system_msg, user_msg]
     category_name = query_ollama(messages)
+    
+    # if model returns cannot assist with financial information error
+    if 'financial' in category_name.lower():
+        category_name = 'Financial Statement'
 
     if category_name not in TAXONOMY:
         category_name = "Miscellaneous"
@@ -49,45 +62,18 @@ def classify_document(document_id, document_text):
 def validate_document(document_id, category_code, document_text):
     category_name = next((k for k, v in TAXONOMY.items() if v == category_code), "Miscellaneous")
 
-    if category_name == "Death Certificate":
-        rules = (
-            "- Must contain 'Certificate of Death'\n"
-            "- Must contain 'Date of death'\n"
-            "- Must contain 'Place of Death'\n"
-            "- Must contain 'Full Name of Deceased'\n"
-            "- Must contain 'Sex'\n"
-            "- Must contain 'Age at Death'\n"
-            "- Must contain 'Date of Birth'\n"
-            "- Must contain 'Social Security Number'\n"
-            "- Must contain 'Usual Residence'\n"
-            "- Must contain 'Marital Status'\n"
-            "- Must contain 'Name of Spouse'\n"
-            "- Must contain 'Occupation'\n"
-            "- Must contain 'Informant Name'\n"
-            "- Must contain 'Relationship to Deceased'\n"
-            "- Must contain 'Cause of Death'\n"
-            "- Must contain 'Certifying Physician'\n"
-            "- Must contain 'Date Signed'\n"
-            "- Must contain 'Registrar'\n"
-        )
-    elif category_name == "Will or Trust":
-        rules = (
-            "- Must contain 'Last Will and Testament' or 'Trust Agreement'\n"
-            "- Must contain the full name of the testator\n"
-            "- Must include the date the document was signed\n"
-            "- Must specify beneficiaries or trustees\n"
-            "- Must be properly signed by the testator or trustee\n"
-        )
-    else:
+    rules = RULES.get(category_name)
+    
+    if not rules:
         return {"documentId": document_id, "valid": True, "reason": "No validation required"}
 
     system_msg = ChatMessage(
         role="system",
-        content=f"Validate this document for {category_name} compliance.\nRules:\n{rules}"
+        content=f"Validate this document for {category_name} compliance.\n only check for these rules and nothing else:\n{rules}"
     )
     user_msg = ChatMessage(
         role="user",
-        content=f"Document:\n{document_text}\n\nAnswer ONLY in JSON format: {{\"valid\": true/false, \"reason\": \"explanation if valid/invalid\"}}"
+        content=f"Document:\n{document_text}\n\nAnswer ONLY in JSON format: {{\"valid\": true/false, \"reason\": \"explanation\"}}"
     )
     messages = [system_msg, user_msg]
 

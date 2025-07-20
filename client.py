@@ -29,4 +29,8 @@ if __name__ == "__main__":
     send_document("doc1", "./documents/death_cert.txt")
     send_document("doc2", "./documents/will.txt")
     send_document("doc3", "./documents/miscellaneous.txt")
-    send_document("doc1", "./documents/false_death_cert.txt")
+    send_document("doc4", "./documents/false_death_cert.txt")
+    send_document("doc5", "./documents/financial_statement.txt")
+    send_document("doc6", "./documents/tax_doc.txt")
+    send_document("doc7", "./documents/property_deed.txt")    
+    

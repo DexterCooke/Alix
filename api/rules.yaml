@@ -1,0 +1,57 @@
+Death Certificate: |
+  - Must contain 'Certificate of Death'
+  - Must contain 'Date of death'
+  - Must contain 'Place of Death'
+  - Must contain 'Full Name of Deceased'
+  - Must contain 'Sex'
+  - Must contain 'Age at Death'
+  - Must contain 'Date of Birth'
+  - Must contain 'Social Security Number'
+  - Must contain 'Usual Residence'
+  - Must contain 'Marital Status'
+  - Must contain 'Name of Spouse'
+  - Must contain 'Occupation'
+  - Must contain 'Informant Name'
+  - Must contain 'Relationship to Deceased'
+  - Must contain 'Cause of Death'
+  - Must contain 'Certifying Physician'
+  - Must contain 'Date Signed'
+  - Must contain 'Registrar'
+
+Will or Trust: |
+  - Must contain 'Last Will and Testament' or 'Trust Agreement'
+  - Must contain full name of the testator
+  - Must include the date the document was signed
+  - Must specify beneficiaries or trustees
+  - Must be properly signed by the testator or trustee
+
+Financial Statement: |
+  - Must contain 'Financial Statement' title or header
+  - Must include Personal Information section (Name, Address, Contact)
+  - Must list Assets with amounts
+  - Must list Liabilities with amounts
+  - Must provide a Net Worth or Summary calculation
+  - Should include Income and Expenses details
+
+Tax Document: |
+  - Must contain 'Form 1040' or other tax return title
+  - Must list 'Total income' line
+  - Must list 'Adjusted gross income'
+  - Must list 'Taxable income'
+  - Must list 'Total tax'
+  - Must list 'Federal income tax withheld'
+  - Must include a 'Sign Here' section with signature and date
+  - Should list attachments or schedules (e.g., W-2, Schedule 1, Schedule 2)
+
+Property Deed: |
+  - Must contain 'Property Deed' or 'Deed' title/header
+  - Must list Grantor and Grantee names and addresses
+  - Must include the date of execution
+  - Must state the consideration amount (e.g., sale price)
+  - Must provide a legal description of the property
+  - Must include covenants and warranties language
+  - Must include Grantor’s signature and seal
+  - Must include a Notary or witness acknowledgment section
+  - Should include recording information (e.g., county clerk details)
+
+
