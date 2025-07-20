@@ -37,8 +37,8 @@ Leave this running while you use the API.
 
 3. Clone the repo
   ```bash
-  git clone <your-repo-url>
-  cd Alix
+  git clone https://github.com/DexterCooke/Alix.git
+  cd Alix/api
   ```
 
 
@@ -64,34 +64,15 @@ python -m flask run
 
 The API listens on http://127.0.0.1:5000
 
-7. Run the client
-  ```bash
-cd Alix
-python client.py
-```
 
-## Sends the following files located in the project document folder:
-
-- death_cert.txt
-- will_doc.txt
-- financial_statement.txt
-- false_death_cert.txt
-- tax_document.txt
-- property_deed.txt
-- misc_doc.txt
-
-and prints their JSON responses.
-
-## Valid Death Certificate
-curl -X POST http://127.0.0.1:5000/process_document \
-  -H "Content-Type: application/json" \
-  -d '{"documentId":"doc1","text":"STATE OF NEW YORK\nCERTIFICATE OF DEATH\nDate of death: January 1, 2023\nSigned by Registrar Helen T. Vaughn"}'
-
-
-curl -X POST http://127.0.0.1:5000/process_document \
-  -H "Content-Type: application/json" \
-  -d '{"documentId":"doc2","text":"STATE OF NEW YORK\nCERTIFICATE OF DEATH\nThis is not a death certificate."}'
-
+## Copy curl examples in Alix/documents to validate documents or use Postman
+- death_cert_curl.txt
+- false_death_cert_curl.txt
+- financial_statement_curl.txt
+- miscellaneous_curl.txt
+- property_deed_curl.txt
+- tax_doc_curl.txt
+- will_curl.txt
 
 
 ## Postman

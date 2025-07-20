@@ -1,0 +1,6 @@
+curl -X POST http://127.0.0.1:5000/process_document \
+  -H "Content-Type: application/json" \
+  -d '{
+    "documentId": "death-cert-001",
+    "text": "STATE OF NEW YORK\nDEPARTMENT OF HEALTH\n\nCERTIFICATE OF DEATH\n\nCertificate Number: 2023-NY-00012345\n\n1. Full Name of Deceased: Johnathan Edward Doe\n2. Date of death: January 1, 2023\n3. Place of Death: New York-Presbyterian Hospital, New York, NY\n4. Sex: Male\n5. Age at Death: 76 years\n6. Date of Birth: March 5, 1946\n7. Social Security Number: 123-45-6789\n8. Usual Residence: 789 Elm Street, Albany, NY 12207\n9. Marital Status: Married\n10. Name of Spouse: Margaret Anne Doe\n11. Occupation: Retired Attorney\n12. Informant Name: Michael Doe\n13. Relationship to Deceased: Son\n14. Cause of Death: Acute Myocardial Infarction\n15. Certifying Physician: Dr. Linda Park, M.D.\n16. Date Signed: January 2, 2023\n\nFiled with the New York Department of Health\nDate Received: January 3, 2023\nRegistrar: Helen T. Vaughn"
+  }'

@@ -32,10 +32,12 @@ Financial Statement: |
   - Must list Liabilities with amounts
   - Must provide a Net Worth or Summary calculation
   - Should include Income and Expenses details
+  - Should not contain tax
 
 Tax Document: |
-  - Must contain 'Form 1040' or other tax return title
+  - Must contain 'Form 1040' or other Tax Return title
   - Must list 'Total income' line
+  - U.S. Individual Income Tax Return
   - Must list 'Adjusted gross income'
   - Must list 'Taxable income'
   - Must list 'Total tax'

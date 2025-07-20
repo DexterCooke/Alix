@@ -1,0 +1,6 @@
+curl -X POST http://127.0.0.1:5000/process_document \
+  -H "Content-Type: application/json" \
+  -d '{
+    "documentId": "will-trust-001",
+    "text": "Last Will and Testament of Johnathan Edward Doe\n\nI, Johnathan Edward Doe, declare this to be my Last Will and Testament. I appoint Jane Smith as executor of my estate and leave my property equally to my children.\n\nSigned: Johnathan Edward Doe\nDate: March 15, 2023"
+  }'

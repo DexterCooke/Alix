@@ -1,0 +1,6 @@
+curl -X POST http://127.0.0.1:5000/process_document \
+  -H "Content-Type: application/json" \
+  -d '{
+    "documentId": "death-cert-false-001",
+    "text": "STATE OF NEW YORK\nDEPARTMENT OF HEALTH\n\nCertificate Number: 2023-NY-00012345\n\n1. Full Name: Johnathan Edward Doe\n2. Place of Death: New York-Presbyterian Hospital, New York, NY\n3. Sex: Male\n4. Age at Death: 76 years\n\nFiled with the New York Department of Health\nRegistrar: Helen T. Vaughn"
+  }'

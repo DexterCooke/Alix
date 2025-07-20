@@ -1,0 +1,6 @@
+curl -X POST http://127.0.0.1:5000/process_document \
+  -H "Content-Type: application/json" \
+  -d '{
+    "documentId": "tax-doc-002",
+    "text": "FORM 1040\nU.S. Individual Income Tax Return\nFor the year Jan. 1–Dec. 31, 2023\n\nTotal income: $134,700\nAdjusted gross income: $132,700\nTaxable income: $105,000\nTotal tax: $15,854\nFederal income tax withheld: $12,000\n\nSign Here\nSignature: Johnathan Edward Doe\nDate: 04/15/2024"
+  }'

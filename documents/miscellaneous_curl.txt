@@ -1,0 +1,6 @@
+curl -X POST http://127.0.0.1:5000/process_document \
+  -H "Content-Type: application/json" \
+  -d '{
+    "documentId": "misc-doc-002",
+    "text": "Date: July 10, 2023\n\nDear Resident,\n\nPlease be advised that street resurfacing will take place on Elm Street between Oak Ave and Pine Road from July 15 through July 20. Parking will be restricted during this time. We appreciate your cooperation.\n\nSincerely,\nCity Public Works Department"
+  }'

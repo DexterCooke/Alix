@@ -1,0 +1,6 @@
+curl -X POST http://127.0.0.1:5000/process_document \
+  -H "Content-Type: application/json" \
+  -d '{
+    "documentId": "fin-stmt-001",
+    "text": "FINANCIAL STATEMENT\nPrepared for Johnathan Edward Doe\nDate: March 15, 2023\n\nPersonal Information:\nName: Johnathan Edward Doe\nAddress: 789 Elm Street, Albany, NY 12207\nPhone: (555) 123-4567\n\nAssets:\n- Cash and Cash Equivalents: $50,000\n- Checking Account Balance: $15,000\n- Savings Account Balance: $35,000\n- Investments: $120,000\n\nLiabilities:\n- Mortgage on Primary Residence: $200,000\n- Credit Card Debt: $10,000\n\nNet Worth Calculation:\nTotal Assets: $220,000\nTotal Liabilities: $210,000\nNet Worth: $10,000"
+  }'
