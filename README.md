@@ -51,7 +51,6 @@ source .venv/bin/activate    # macOS/Linux
 
 5. Install Python dependencies
   ```bash
-pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ````
 
